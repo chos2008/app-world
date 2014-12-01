@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TableLayout  
+	xmlns:android="http://schemas.android.com/apk/res/android"  
+	android:layout_width="fill_parent"  
+	android:layout_height="wrap_content" 
+	android:stretchColumns="1,2"
+	android:layout_gravity="center">  
+	<TableRow 
+	    android:layout_width="fill_parent">  
+		<ImageView  
+    		android:id="@+id/ItemImage" 
+    		android:layout_width="50dp" 
+    		android:layout_height="fill_parent" 
+    		android:gravity="center" 
+    		android:contentDescription="@string/icon"/>
+		
+		<TextView 
+			android:id="@+id/ItemTitle" 
+			android:gravity="center" 
+			android:layout_height="fill_parent" 
+			android:layout_width="70dp"/>
+		
+		<TextView 
+			android:id="@+id/ItemText" 
+			android:gravity="center" 
+			android:layout_height="fill_parent" 
+			android:layout_width="120dp"/>
+		
+		<ImageView  
+    		android:id="@+id/ItemBond" 
+    		android:gravity="center" 
+    		android:layout_width="24dp" 
+    		android:layout_height="fill_parent" 
+    		android:contentDescription="@string/bond"/>
+		
+		<ImageView  
+    		android:id="@+id/ItemConnect" 
+    		android:layout_width="50dp" 
+    		android:layout_height="fill_parent" 
+    		android:gravity="center" 
+    		android:contentDescription="@string/connect"/>
+	</TableRow>  
+</TableLayout>
