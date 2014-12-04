@@ -23,6 +23,12 @@
 	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 	
 	<uses-permission android:name="android.permission.INTERNET" />
+	
+	<uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
 
     <application
         android:allowBackup="true"
@@ -45,11 +51,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
+        <!-- 
+		 -->
 		<activity android:name="com.example.world.MainActivity"/>
 		<activity android:name="com.example.world.BluetoothFragmentActivity"/>
 		<activity android:name="com.example.world.account.LoginFragmentActivity"/>
 		<activity android:name="com.example.world.account.RegisterAccountFragmentActivity"/>
+		
+		<activity android:name="io.card.payment.CardIOActivity" android:configChanges="keyboardHidden|orientation" />
+    	<activity android:name="io.card.payment.DataEntryActivity" android:screenOrientation="portrait"/>
+         
     </application>
 
 </manifest>

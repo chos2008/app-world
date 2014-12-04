@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+import com.example.world.account.CardFragment;
 import com.example.world.account.LoginFragmentActivity;
 import com.example.world.account.RegisterAccountFragmentActivity;
 
@@ -75,6 +76,7 @@ public class MainFragmentActivity extends FragmentActivity {
 		TextView tvTabAffairs = (TextView) findViewById(R.id.mAffairs);
 		TextView tvTabMessage = (TextView) findViewById(R.id.mMessage);
 		TextView tvTabMore = (TextView) findViewById(R.id.mMore);
+		TextView tvTabCard = (TextView) findViewById(R.id.mCard);
 		TextView tvTabLogin = (TextView) findViewById(R.id.mLogin);
 		TextView tvTabRegister = (TextView) findViewById(R.id.mRegister);
 		
@@ -82,11 +84,13 @@ public class MainFragmentActivity extends FragmentActivity {
 		tvTabList.add(tvTabAffairs);
 		tvTabList.add(tvTabMessage);
 		tvTabList.add(tvTabMore);
+		tvTabList.add(tvTabCard);
 
 		tvTabContact.setOnClickListener(new MyOnClickListener(0));
         tvTabAffairs.setOnClickListener(new MyOnClickListener(1));
         tvTabMessage.setOnClickListener(new MyOnClickListener(2));
         tvTabMore.setOnClickListener(new MyOnClickListener(3));
+        tvTabCard.setOnClickListener(new MyOnClickListener(4));
         tvTabLogin.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
@@ -113,12 +117,14 @@ public class MainFragmentActivity extends FragmentActivity {
         Fragment affairsfragment = DefaultFragment.newInstance(R.layout.main_fragment_activity_content, "Affairs");
         Fragment messageFragment = DefaultFragment.newInstance(R.layout.main_fragment_activity_content, "Message");
         Fragment moreFragment = MoreFragment.newInstance(R.layout.more_fragment, "More");
+        Fragment cardFragment = CardFragment.newInstance("ÃûÆ¬");
   
         List<Fragment> fragmentsList = new ArrayList<Fragment>();
         fragmentsList.add(contactFragment);  
         fragmentsList.add(affairsfragment);  
         fragmentsList.add(messageFragment);  
         fragmentsList.add(moreFragment);
+        fragmentsList.add(cardFragment);
         
         mPager.setAdapter(new WorldFragmentPagerAdapter(getSupportFragmentManager(), fragmentsList));  
         mPager.setCurrentItem(0);  

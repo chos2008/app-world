@@ -8,8 +8,11 @@
     <string name="affairs">动态</string>
     <string name="message">消息</string>
     <string name="more">更多</string>
+    <string name="card">名片</string>
     <string name="register">注册</string>
     <string name="login">登录</string>
+    
+    <string name="mobile_contact">通讯录</string>
     
     <string name="btLogin">登录</string>
     <string name="username_hint_text">帐号/手机号码/邮箱</string>
@@ -24,6 +27,7 @@
     <string name="joystick">游戏手柄</string>
     <string name="remoteControl">遥控器</string>
     <string name="touchControl">触控屏</string>
+    <string name="scanCard">扫描银行卡</string>
     <string name="setting">设置</string>
     <string name="update">版本更新</string>
     <string name="about">关于...</string>

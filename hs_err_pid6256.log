@@ -1,0 +1,89 @@
+#
+# An unexpected error has been detected by Java Runtime Environment:
+#
+#  Internal Error (classFileParser.cpp:2923), pid=6256, tid=6980
+#  Error: ShouldNotReachHere()
+#
+# Java VM: Java HotSpot(TM) Client VM (11.0-b15 mixed mode windows-x86)
+# If you would like to submit a bug report, please visit:
+#   http://java.sun.com/webapps/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0259a800):  JavaThread "Unknown thread" [_thread_in_vm, id=6980, stack(0x002b0000,0x00300000)]
+
+Stack: [0x002b0000,0x00300000]
+
+[error occurred during error reporting (printing native stack), id 0xc0000005]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0259a800 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=6980, stack(0x002b0000,0x00300000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Dynamic libraries:
+0x00400000 - 0x00424000 	D:\usr\local\jdk1.6.0_10\bin\javaw.exe
+0x774b0000 - 0x77630000 	C:\windows\SysWOW64\ntdll.dll
+0x766b0000 - 0x767c0000 	C:\windows\syswow64\kernel32.dll
+0x75070000 - 0x750b7000 	C:\windows\syswow64\KERNELBASE.dll
+0x753e0000 - 0x75480000 	C:\windows\syswow64\ADVAPI32.dll
+0x750f0000 - 0x7519c000 	C:\windows\syswow64\msvcrt.dll
+0x74f90000 - 0x74fa9000 	C:\windows\SysWOW64\sechost.dll
+0x765c0000 - 0x766b0000 	C:\windows\syswow64\RPCRT4.dll
+0x74ed0000 - 0x74f30000 	C:\windows\syswow64\SspiCli.dll
+0x74ec0000 - 0x74ecc000 	C:\windows\syswow64\CRYPTBASE.dll
+0x761a0000 - 0x762a0000 	C:\windows\syswow64\USER32.dll
+0x76870000 - 0x76900000 	C:\windows\syswow64\GDI32.dll
+0x75340000 - 0x7534a000 	C:\windows\syswow64\LPK.dll
+0x767d0000 - 0x7686d000 	C:\windows\syswow64\USP10.dll
+0x74f30000 - 0x74f90000 	C:\windows\system32\IMM32.DLL
+0x75480000 - 0x7554c000 	C:\windows\syswow64\MSCTF.dll
+0x7c340000 - 0x7c396000 	D:\usr\local\jdk1.6.0_10\jre\bin\msvcr71.dll
+0x6d8b0000 - 0x6db06000 	D:\usr\local\jdk1.6.0_10\jre\bin\client\jvm.dll
+0x74bb0000 - 0x74be2000 	C:\windows\system32\WINMM.dll
+0x6f670000 - 0x6f6bc000 	C:\windows\system32\apphelp.dll
+0x6d330000 - 0x6d338000 	D:\usr\local\jdk1.6.0_10\jre\bin\hpi.dll
+0x75040000 - 0x75045000 	C:\windows\syswow64\PSAPI.DLL
+0x6d420000 - 0x6d449000 	D:\usr\local\jdk1.6.0_10\jre\bin\jdwp.dll
+0x6d750000 - 0x6d756000 	D:\usr\local\jdk1.6.0_10\jre\bin\npt.dll
+0x6d860000 - 0x6d86c000 	D:\usr\local\jdk1.6.0_10\jre\bin\verify.dll
+0x6d3d0000 - 0x6d3ef000 	D:\usr\local\jdk1.6.0_10\jre\bin\java.dll
+0x6d8a0000 - 0x6d8af000 	D:\usr\local\jdk1.6.0_10\jre\bin\zip.dll
+
+VM Arguments:
+jvm_args: -agentlib:jdwp=transport=dt_socket,suspend=y,address=localhost:3054 -Dfile.encoding=GBK -Xbootclasspath:D:\usr\local\adt-bundle-windows-x86_64-20140321\sdk\platforms\android-19\android.jar 
+java_command: org.chos.framework.code.QrCodeTest
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=D:\usr\local\jdk1.6.0_38
+CLASSPATH=.;D:\usr\local\jdk1.6.0_38\lib;D:\usr\local\jdk1.6.0_38\jre\lib;
+PATH=D:\usr\local\jdk1.6.0_10\jre\bin;D:/usr/local/jdk1.6.0_38/bin/../jre/bin/server;D:/usr/local/jdk1.6.0_38/bin/../jre/bin;D:/usr/local/jdk1.6.0_38/bin/../jre/lib/amd64;D:\sbin\bin;D:\usr\local\apache-maven-3.0.5\bin;D:\usr\local\jdk1.6.0_38\bin;C:\windows\system32;C:\windows;C:\windows\System32\Wbem;C:\windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Windows7Master;D:\usr\local\TortoiseSVN\bin;D:\usr\local\apache-ant-1.9.4\bin;D:\usr\local\Python27;D:\usr\local\android-ndk-r9d;D:\usr\local\adt-bundle-windows-x86_64-20140321\sdk\tools;D:\usr\local\adt-bundle-windows-x86_64-20140321\sdk\platform-tools;D:\usr\local\git\Git\cmd;D:\usr\local\git\Git\bin;C:\Program Files\Microsoft SQL Server\110\Tools\Binn\;C:\Program Files\Microsoft\Web Platform Installer\;C:\Program Files (x86)\Microsoft ASP.NET\ASP.NET Web Pages\v1.0\;C:\Program Files (x86)\Windows Kits\8.0\Windows Performance Toolkit\;D:\usr\local\TortoiseHg\;D:\usr\local\adt-bundle-windows-x86_64-20140321\eclipse;
+USERNAME=luoxiaoyong
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 42 Stepping 7, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows NT 6.1 Build 7601 Service Pack 1
+
+CPU:total 4 (8 cores per cpu, 2 threads per core) family 6 model 10 stepping 7, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, ht
+
+Memory: 4k page, physical 4194303k(4194303k free), swap 4194303k(4194303k free)
+
+vm_info: Java HotSpot(TM) Client VM (11.0-b15) for windows-x86 JRE (1.6.0_10-rc2-b32), built on Sep 12 2008 00:52:11 by "java_re" with MS VC++ 7.1
+
+time: Tue Dec 02 21:59:26 2014
+elapsed time: 0 seconds
+
