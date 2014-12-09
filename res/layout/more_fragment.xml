@@ -56,11 +56,20 @@
 	            android:text="@string/touchControl" />
 
 	        <TextView
+	            android:id="@+id/scan"
+	            android:layout_width="fill_parent"
+	            android:layout_height="32dp"
+	            android:gravity="center_vertical"
+	            android:text="@string/scan" />
+	        
+	        <TextView
 	            android:id="@+id/scanCard"
 	            android:layout_width="fill_parent"
 	            android:layout_height="32dp"
 	            android:gravity="center_vertical"
 	            android:text="@string/scanCard" />
+	        
+	        
 	        
 	        <TextView
 	            android:id="@+id/setting"

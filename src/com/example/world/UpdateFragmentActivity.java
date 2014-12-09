@@ -35,7 +35,7 @@ public class UpdateFragmentActivity extends FragmentActivity {
 		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, 
 				WindowManager.LayoutParams.FLAG_FULLSCREEN); //»•µÙ–≈œ¢¿∏
 		
-		setContentView(R.layout.login_fragment_activity);
+		setContentView(R.layout.capture_fragment_activity);
 	}
 
 }

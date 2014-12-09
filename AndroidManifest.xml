@@ -53,14 +53,16 @@
         android:theme="@style/AppTheme" >
         
 		<!-- 
+		  android:theme="@style/Theme.Base.AppCompat.Light" 
+		  
 		  android:name="com.example.world.MainActivity"  
 		  android:name="com.example.world.MainFragmentActivity"
 		  android:name="com.example.world.ContactFragmentActivity"
 		-->
 		<activity 
-			android:theme="@style/Theme.Base.AppCompat.Light" 
             android:name="com.example.world.MainFragmentActivity"
-            android:label="@string/app_name" >
+            android:label="@string/app_name" 
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -71,6 +73,7 @@
 		 -->
 		<activity android:name="com.example.world.MainActivity"/>
 		<activity android:name="com.example.world.BluetoothFragmentActivity"/>
+		<activity android:name="com.example.world.CaptureFragmentActivity"/>
 		<activity android:name="com.example.world.account.LoginFragmentActivity"/>
 		<activity android:name="com.example.world.account.RegisterAccountFragmentActivity"/>
 		

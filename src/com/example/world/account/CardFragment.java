@@ -3,7 +3,7 @@
  * 
  * 
  * 
- * @author luoxiaoyong@yhd-it.com
+ * @author ada
  * @version 1.0  2014Äê12ÔÂ2ÈÕ
  */
 package com.example.world.account;

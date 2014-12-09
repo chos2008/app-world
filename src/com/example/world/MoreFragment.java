@@ -84,10 +84,32 @@ public class MoreFragment extends Fragment {
         View view = inflater.inflate(resource, container, false);
         
         TextView bluetooth = (TextView) view.findViewById(R.id.bluetooth);
-        bluetooth.setOnClickListener(new MyOnClickListener(view));
+        bluetooth.setOnClickListener(new JoystickOnClickListener(view));
+        
+        TextView joystick = (TextView) view.findViewById(R.id.joystick);
+        joystick.setOnClickListener(new JoystickOnClickListener(view));
+        
+        TextView remoteControl = (TextView) view.findViewById(R.id.remoteControl);
+        remoteControl.setOnClickListener(new RemoteControlOnClickListener(view));
+        
+        TextView touchControl = (TextView) view.findViewById(R.id.touchControl);
+        touchControl.setOnClickListener(new TouchControlOnClickListener(view));
+        
+        TextView scan = (TextView) view.findViewById(R.id.scan);
+        scan.setOnClickListener(new ScanOnClickListener(view));
         
         TextView scanCard = (TextView) view.findViewById(R.id.scanCard);
         scanCard.setOnClickListener(new ScanCardOnClickListener(view));
+        
+        TextView setting = (TextView) view.findViewById(R.id.setting);
+        setting.setOnClickListener(new SettingOnClickListener(view));
+        
+        TextView update = (TextView) view.findViewById(R.id.update);
+        update.setOnClickListener(new UpdateOnClickListener(view));
+        
+        TextView about = (TextView) view.findViewById(R.id.about);
+        about.setOnClickListener(new AboutOnClickListener(view));
+        
         return view;
     }  
 
@@ -99,11 +121,11 @@ public class MoreFragment extends Fragment {
     
     
     
-    public class MyOnClickListener implements View.OnClickListener {  
+    public class BluetoochOnClickListener implements View.OnClickListener {  
         
     	private View view;
     	
-        public MyOnClickListener(View view) {
+        public BluetoochOnClickListener(View view) {
         	this.view = view;
         }
         
@@ -112,6 +134,74 @@ public class MoreFragment extends Fragment {
         	System.out.println("on click " + v.getId());
         	Context context = view.getContext();
 			Intent intent = new Intent(context, BluetoothFragmentActivity.class);
+        	context.startActivity(intent);
+        }  
+    };
+    
+    public class JoystickOnClickListener implements View.OnClickListener {  
+        
+    	private View view;
+    	
+        public JoystickOnClickListener(View view) {
+        	this.view = view;
+        }
+        
+        @Override  
+        public void onClick(View v) {
+        	System.out.println("on click " + v.getId());
+        	Context context = view.getContext();
+			Intent intent = new Intent(context, BluetoothFragmentActivity.class);
+        	context.startActivity(intent);
+        }  
+    };
+    
+    public class RemoteControlOnClickListener implements View.OnClickListener {  
+        
+    	private View view;
+    	
+        public RemoteControlOnClickListener(View view) {
+        	this.view = view;
+        }
+        
+        @Override  
+        public void onClick(View v) {
+        	System.out.println("on click " + v.getId());
+        	Context context = view.getContext();
+			Intent intent = new Intent(context, BluetoothFragmentActivity.class);
+        	context.startActivity(intent);
+        }  
+    };
+    
+    public class TouchControlOnClickListener implements View.OnClickListener {  
+        
+    	private View view;
+    	
+        public TouchControlOnClickListener(View view) {
+        	this.view = view;
+        }
+        
+        @Override  
+        public void onClick(View v) {
+        	System.out.println("on click " + v.getId());
+        	Context context = view.getContext();
+			Intent intent = new Intent(context, BluetoothFragmentActivity.class);
+        	context.startActivity(intent);
+        }  
+    };
+    
+    public class ScanOnClickListener implements View.OnClickListener {  
+        
+    	private View view;
+    	
+        public ScanOnClickListener(View view) {
+        	this.view = view;
+        }
+        
+        @Override  
+        public void onClick(View v) {
+        	System.out.println("on click " + v.getId());
+        	Context context = view.getContext();
+			Intent intent = new Intent(context, CaptureFragmentActivity.class);
         	context.startActivity(intent);
         }  
     };
@@ -155,7 +245,56 @@ public class MoreFragment extends Fragment {
         }  
     }
 
-
+    public class SettingOnClickListener implements View.OnClickListener {  
+        
+    	private View view;
+    	
+        public SettingOnClickListener(View view) {
+        	this.view = view;
+        }
+        
+        @Override  
+        public void onClick(View v) {
+        	System.out.println("on click " + v.getId());
+        	Context context = view.getContext();
+			Intent intent = new Intent(context, CaptureFragmentActivity.class);
+        	context.startActivity(intent);
+        }  
+    };
+    
+    public class UpdateOnClickListener implements View.OnClickListener {  
+        
+    	private View view;
+    	
+        public UpdateOnClickListener(View view) {
+        	this.view = view;
+        }
+        
+        @Override  
+        public void onClick(View v) {
+        	System.out.println("on click " + v.getId());
+        	Context context = view.getContext();
+			Intent intent = new Intent(context, CaptureFragmentActivity.class);
+        	context.startActivity(intent);
+        }  
+    };
+    
+    public class AboutOnClickListener implements View.OnClickListener {  
+        
+    	private View view;
+    	
+        public AboutOnClickListener(View view) {
+        	this.view = view;
+        }
+        
+        @Override  
+        public void onClick(View v) {
+        	System.out.println("on click " + v.getId());
+        	Context context = view.getContext();
+			Intent intent = new Intent(context, CaptureFragmentActivity.class);
+        	context.startActivity(intent);
+        }  
+    };
 
 	/* (non-Javadoc)
 	 * @see android.support.v4.app.Fragment#onActivityResult(int, int, android.content.Intent)

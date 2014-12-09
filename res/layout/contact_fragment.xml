@@ -18,14 +18,65 @@
     android:paddingBottom="0dp"
     android:paddingLeft="0dp"
     tools:context="com.example.world.MainActivity$PlaceholderFragment" >
-    <LinearLayout 
+    <LinearLayout
+	    android:id="@+id/head"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="100dp" 
+	    android:layout_marginTop="5dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="0dp" 
+        android:paddingTop="0dp" 
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp" 
+        android:background="@color/white"
+	    android:orientation="horizontal" 
+	    android:layout_alignParentTop="true">
+
+        <TextView
+	        android:id="@+id/mSof" 
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent" 
+	        android:layout_weight="1" 
+	        android:gravity="center"
+	        android:text="@string/sof" />
+        <TextView
+	        android:id="@+id/mContacts" 
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:text="@string/contacts" />
+        <TextView
+	        android:id="@+id/mGroup" 
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:text="@string/group" />
+    </LinearLayout>
+
+    <LinearLayout
         android:id="@+id/content"
         android:layout_width="fill_parent"
-        android:layout_height="match_parent" 
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        android:layout_below="@+id/head"
+        android:orientation="vertical" >
+		<TextView
+	        android:layout_width="fill_parent"
+	        android:layout_height="24dp"
+	        android:gravity="center_vertical"
+	        android:text="@string/fg"/>
+		
+		<!-- 
+		  android:background="@color/white"
+		 -->
        	<ListView 
             android:id="@+id/contact"
             android:layout_width="wrap_content"   
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content" 
+            android:listSelector="@drawable/selector"
+			android:cacheColorHint="@android:color/transparent"/>
     </LinearLayout>
 </RelativeLayout>

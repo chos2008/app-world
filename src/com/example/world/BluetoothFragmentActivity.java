@@ -20,7 +20,7 @@ import java.util.UUID;
 
 import org.chos.world.ContactModel;
 
-import com.example.world.MoreFragment.MyOnClickListener;
+import com.example.world.MoreFragment.JoystickOnClickListener;
 
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;

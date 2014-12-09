@@ -3,7 +3,7 @@
  * 
  * 
  * 
- * @author luoxiaoyong@yhd-it.com
+ * @author ada
  * @version 1.0  2014Äê11ÔÂ30ÈÕ
  */
 package org.chos.world.bluetooth;

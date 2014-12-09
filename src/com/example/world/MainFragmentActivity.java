@@ -27,6 +27,8 @@ import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.util.DisplayMetrics;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.TranslateAnimation;
 import android.widget.TextView;
@@ -54,6 +56,11 @@ public class MainFragmentActivity extends FragmentActivity {
 	@Override
 	protected void onCreate(Bundle arg0) {
 		super.onCreate(arg0);
+		requestWindowFeature(Window.FEATURE_NO_TITLE); //去掉标题栏
+
+		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, 
+				WindowManager.LayoutParams.FLAG_FULLSCREEN); //去掉信息栏
+		
 		setContentView(R.layout.main_fragment_activity);
 		
 		resources = getResources();
@@ -72,23 +79,25 @@ public class MainFragmentActivity extends FragmentActivity {
 		View activityView = mInflater.inflate(R.layout.main_fragment_activity_content, null);  
 		
 		tvTabList = new LinkedList<TextView>();
+		TextView tvTabMessage = (TextView) findViewById(R.id.mMessage);
 		TextView tvTabContact = (TextView) findViewById(R.id.mContact);
 		TextView tvTabAffairs = (TextView) findViewById(R.id.mAffairs);
-		TextView tvTabMessage = (TextView) findViewById(R.id.mMessage);
 		TextView tvTabMore = (TextView) findViewById(R.id.mMore);
 		TextView tvTabCard = (TextView) findViewById(R.id.mCard);
 		TextView tvTabLogin = (TextView) findViewById(R.id.mLogin);
 		TextView tvTabRegister = (TextView) findViewById(R.id.mRegister);
 		
+		tvTabList.add(tvTabMessage);
 		tvTabList.add(tvTabContact);
 		tvTabList.add(tvTabAffairs);
-		tvTabList.add(tvTabMessage);
 		tvTabList.add(tvTabMore);
 		tvTabList.add(tvTabCard);
+//		tvTabList.add(tvTabLogin);
+//		tvTabList.add(tvTabRegister);
 
-		tvTabContact.setOnClickListener(new MyOnClickListener(0));
-        tvTabAffairs.setOnClickListener(new MyOnClickListener(1));
-        tvTabMessage.setOnClickListener(new MyOnClickListener(2));
+		tvTabMessage.setOnClickListener(new MyOnClickListener(0));
+		tvTabContact.setOnClickListener(new MyOnClickListener(1));
+        tvTabAffairs.setOnClickListener(new MyOnClickListener(2));
         tvTabMore.setOnClickListener(new MyOnClickListener(3));
         tvTabCard.setOnClickListener(new MyOnClickListener(4));
         tvTabLogin.setOnClickListener(new View.OnClickListener() {
@@ -113,16 +122,16 @@ public class MainFragmentActivity extends FragmentActivity {
         
         mPager = (ViewPager) findViewById(R.id.viewPager);
   
+        Fragment messageFragment = DefaultFragment.newInstance(R.layout.main_fragment_activity_content, "Message");
         Fragment contactFragment = DefaultFragment.newInstance(R.layout.contact_fragment, "Contact");
         Fragment affairsfragment = DefaultFragment.newInstance(R.layout.main_fragment_activity_content, "Affairs");
-        Fragment messageFragment = DefaultFragment.newInstance(R.layout.main_fragment_activity_content, "Message");
         Fragment moreFragment = MoreFragment.newInstance(R.layout.more_fragment, "More");
         Fragment cardFragment = CardFragment.newInstance("名片");
   
         List<Fragment> fragmentsList = new ArrayList<Fragment>();
+        fragmentsList.add(messageFragment);  
         fragmentsList.add(contactFragment);  
         fragmentsList.add(affairsfragment);  
-        fragmentsList.add(messageFragment);  
         fragmentsList.add(moreFragment);
         fragmentsList.add(cardFragment);
         
@@ -159,7 +168,7 @@ public class MainFragmentActivity extends FragmentActivity {
         		if (i == arg0) {
         			tvTabList.get(i).setTextColor(resources.getColor(R.color.coral));
         		} else {
-        			tvTabList.get(i).setTextColor(resources.getColor(R.color.black));
+        			tvTabList.get(i).setTextColor(resources.getColor(R.color.silver));
         		}
         	}
         	currIndex = arg0;
