@@ -26,7 +26,7 @@
 	<uses-permission android:name="android.permission.BLUETOOTH"/>
 	
 	
-	
+	<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 	
 	
@@ -72,6 +72,8 @@
         <!-- 
 		 -->
 		<activity android:name="com.example.world.StartFragmentActivity"/>
+		<activity android:name="com.example.world.account.AccountManagerActivity"/>
+		<activity android:name="com.example.world.account.CardFragmentActivity"/>
 		<activity android:name="com.example.world.MainActivity"/>
 		<activity android:name="com.example.world.BluetoothFragmentActivity"/>
 		<activity android:name="com.example.world.CaptureFragmentActivity"/>

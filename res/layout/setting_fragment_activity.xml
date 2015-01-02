@@ -33,6 +33,17 @@
         android:paddingLeft="0dp"
         android:orientation="vertical">
         <TextView
+            android:id="@+id/accountMgr"
+            android:layout_width="fill_parent"
+            android:layout_height="32dp" 
+            android:paddingRight="10dp" 
+	        android:paddingLeft="10dp"
+	        android:drawableRight="@drawable/dzt" 
+	        android:drawableLeft="@drawable/iid"
+	        android:textSize="20sp" 
+            android:gravity="center_vertical"
+            android:text="@string/accountMgr" />
+        <TextView
             android:id="@+id/update"
             android:layout_width="fill_parent"
             android:layout_height="32dp" 

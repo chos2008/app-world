@@ -11,8 +11,58 @@
     android:paddingTop="0dp" 
     android:background="@drawable/background">
     
+    <LinearLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" 
+        android:layout_marginTop="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp" 
+        android:paddingTop="0dp" 
+        android:paddingRight="0dp"
+        android:paddingBottom="0dp"
+        android:paddingLeft="0dp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/card"
+            android:layout_width="fill_parent"
+            android:layout_height="32dp" 
+            android:paddingRight="10dp" 
+	        android:paddingLeft="10dp"
+	        android:drawableRight="@drawable/dzt" 
+	        android:drawableLeft="@drawable/iid"
+	        android:textSize="20sp" 
+	        android:textColor="@color/aqua"
+            android:gravity="center_vertical"
+            android:text="@string/card" />
+        <TextView
+            android:id="@+id/wallet"
+            android:layout_width="fill_parent"
+            android:layout_height="32dp" 
+            android:paddingRight="10dp" 
+	        android:paddingLeft="10dp"
+	        android:drawableRight="@drawable/dzt" 
+	        android:drawableLeft="@drawable/iid"
+	        android:textSize="20sp" 
+	        android:textColor="@color/aqua"
+            android:gravity="center_vertical"
+            android:text="@string/wallet" />
+        
+        <TextView
+            android:id="@+id/album"
+            android:layout_width="fill_parent"
+            android:layout_height="32dp" 
+            android:paddingRight="10dp" 
+	        android:paddingLeft="10dp"
+	        android:drawableRight="@drawable/dzt" 
+	        android:drawableLeft="@drawable/iid"
+	        android:textSize="20sp" 
+	        android:textColor="@color/aqua"
+            android:gravity="center_vertical"
+            android:text="@string/album" />
+	</LinearLayout>
+	
     <LinearLayout
-	    android:id="@+id/title"
 	    android:layout_width="fill_parent" 
 	    android:layout_height="50dp" 
 	    android:layout_marginTop="0dp"

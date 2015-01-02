@@ -8,6 +8,8 @@
  */
 package com.example.world;
 
+import com.example.world.account.AccountManagerActivity;
+
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -39,6 +41,9 @@ public class SettingFragmentActivity extends FragmentActivity {
 		
 		setContentView(R.layout.setting_fragment_activity);
 		
+		TextView accountMgr = (TextView) findViewById(R.id.accountMgr);
+		accountMgr.setOnClickListener(new AccountManagerOnClickListener(this));
+        
 		TextView update = (TextView) findViewById(R.id.update);
         update.setOnClickListener(new UpdateOnClickListener(this));
         
@@ -46,6 +51,21 @@ public class SettingFragmentActivity extends FragmentActivity {
         about.setOnClickListener(new AboutOnClickListener(this));
 	}
 	
+	public class AccountManagerOnClickListener implements View.OnClickListener {  
+        
+    	private Context context;
+    	
+        public AccountManagerOnClickListener(Context context) {
+        	this.context = context;
+        }
+        
+        @Override  
+        public void onClick(View v) {
+        	System.out.println("on click " + v.getId());
+			Intent intent = new Intent(context, AccountManagerActivity.class);
+        	context.startActivity(intent);
+        }  
+    }
 
     public class UpdateOnClickListener implements View.OnClickListener {  
         
@@ -61,7 +81,7 @@ public class SettingFragmentActivity extends FragmentActivity {
 			Intent intent = new Intent(context, CaptureFragmentActivity.class);
         	context.startActivity(intent);
         }  
-    };
+    }
     
     public class AboutOnClickListener implements View.OnClickListener {  
         
@@ -77,7 +97,7 @@ public class SettingFragmentActivity extends FragmentActivity {
 			Intent intent = new Intent(context, CaptureFragmentActivity.class);
         	context.startActivity(intent);
         }  
-    };
+    }
 
 	/* (non-Javadoc)
 	 * @see android.support.v4.app.Fragment#onDestroy()

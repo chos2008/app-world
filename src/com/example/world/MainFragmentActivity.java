@@ -13,7 +13,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 import com.alan.roundimageview.RoundImageView;
-import com.example.world.account.CardFragment;
+import com.example.world.account.CardFragmentActivity;
 import com.example.world.account.LoginFragmentActivity;
 import com.example.world.account.RegisterAccountFragmentActivity;
 
@@ -87,15 +87,15 @@ public class MainFragmentActivity extends FragmentActivity {
 		TextView tvTabContact = (TextView) findViewById(R.id.mContact);
 		TextView tvTabAffairs = (TextView) findViewById(R.id.mAffairs);
 		TextView tvTabMore = (TextView) findViewById(R.id.mMore);
-		TextView tvTabCard = (TextView) findViewById(R.id.mCard);
+//		TextView tvTabCard = (TextView) findViewById(R.id.mCard);
 		TextView tvTabLogin = (TextView) findViewById(R.id.mLogin);
-		TextView tvTabRegister = (TextView) findViewById(R.id.mRegister);
+//		TextView tvTabRegister = (TextView) findViewById(R.id.mRegister);
 		
 		tvTabList.add(tvTabMessage);
 		tvTabList.add(tvTabContact);
 		tvTabList.add(tvTabAffairs);
 		tvTabList.add(tvTabMore);
-		tvTabList.add(tvTabCard);
+//		tvTabList.add(tvTabCard);
 //		tvTabList.add(tvTabLogin);
 //		tvTabList.add(tvTabRegister);
 
@@ -103,7 +103,7 @@ public class MainFragmentActivity extends FragmentActivity {
 		tvTabContact.setOnClickListener(new MyOnClickListener(1));
         tvTabAffairs.setOnClickListener(new MyOnClickListener(2));
         tvTabMore.setOnClickListener(new MyOnClickListener(3));
-        tvTabCard.setOnClickListener(new MyOnClickListener(4));
+//        tvTabCard.setOnClickListener(new MyOnClickListener(4));
         tvTabLogin.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
@@ -114,15 +114,15 @@ public class MainFragmentActivity extends FragmentActivity {
 			}
 		});
         
-        tvTabRegister.setOnClickListener(new View.OnClickListener() {
-			@Override
-			public void onClick(View arg0) {
-				System.out.println("on click " + arg0.getId());
-	        	Context context = MainFragmentActivity.this;
-				Intent intent = new Intent(context, RegisterAccountFragmentActivity.class);
-	        	context.startActivity(intent);
-			}
-		});
+//        tvTabRegister.setOnClickListener(new View.OnClickListener() {
+//			@Override
+//			public void onClick(View arg0) {
+//				System.out.println("on click " + arg0.getId());
+//	        	Context context = MainFragmentActivity.this;
+//				Intent intent = new Intent(context, RegisterAccountFragmentActivity.class);
+//	        	context.startActivity(intent);
+//			}
+//		});
         
         mPager = (ViewPager) findViewById(R.id.viewPager);
   
@@ -130,14 +130,14 @@ public class MainFragmentActivity extends FragmentActivity {
         Fragment contactFragment = DefaultFragment.newInstance(R.layout.contact_fragment, "Contact");
         Fragment affairsfragment = DefaultFragment.newInstance(R.layout.main_fragment_activity_content, "Affairs");
         Fragment moreFragment = MoreFragment.newInstance(R.layout.more_fragment, "More");
-        Fragment cardFragment = CardFragment.newInstance("ÃûÆ¬");
+//        Fragment cardFragment = CardFragmentActivity.getFragment("ÃûÆ¬");
   
         List<Fragment> fragmentsList = new ArrayList<Fragment>();
         fragmentsList.add(messageFragment);  
         fragmentsList.add(contactFragment);  
         fragmentsList.add(affairsfragment);  
         fragmentsList.add(moreFragment);
-        fragmentsList.add(cardFragment);
+//        fragmentsList.add(cardFragment);
         
         mPager.setAdapter(new WorldFragmentPagerAdapter(getSupportFragmentManager(), fragmentsList));  
         mPager.setCurrentItem(0);  

@@ -8,6 +8,8 @@
  */
 package com.example.world;
 
+import com.example.world.account.CardFragmentActivity;
+
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -39,9 +41,28 @@ public class ViewFragmentActivity extends FragmentActivity {
 		
 		setContentView(R.layout.view_fragment_activity);
 		
+		TextView card = (TextView) findViewById(R.id.card);
+		card.setOnClickListener(new CardOnClickListener(this));
+		
 		TextView setting = (TextView) findViewById(R.id.setting);
         setting.setOnClickListener(new SettingOnClickListener(this));
 	}
+	
+	public class CardOnClickListener implements View.OnClickListener {  
+        
+    	private Context context;
+    	
+        public CardOnClickListener(Context context) {
+        	this.context = context;
+        }
+        
+        @Override  
+        public void onClick(View v) {
+        	System.out.println("on click " + v.getId());
+			Intent intent = new Intent(context, CardFragmentActivity.class);
+        	context.startActivity(intent);
+        }  
+    };
 	
 	public class SettingOnClickListener implements View.OnClickListener {  
         
@@ -57,7 +78,7 @@ public class ViewFragmentActivity extends FragmentActivity {
 			Intent intent = new Intent(context, SettingFragmentActivity.class);
         	context.startActivity(intent);
         }  
-    };
+    }
 
 	/* (non-Javadoc)
 	 * @see android.support.v4.app.Fragment#onDestroy()

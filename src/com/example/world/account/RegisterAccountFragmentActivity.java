@@ -86,11 +86,15 @@ public class RegisterAccountFragmentActivity extends FragmentActivity implements
         criteria.setPowerRequirement(Criteria.POWER_LOW); // 低功耗  
   
         String bestProvider = locationManager.getBestProvider(criteria, true); // 获取GPS信息  
-        Location location = locationManager.getLastKnownLocation(bestProvider); // 通过GPS获取位置  
-        updateToNewLocation(location);  
-        // 设置监听器，自动更新的最小时间为间隔N秒(1秒为1*1000，这样写主要为了方便)或最小位移变化超过N米  
-        locationManager.requestLocationUpdates(bestProvider, 100 * 1000, 500, this);
-		
+        if (bestProvider == null) {
+        	content = "您的位置服务功能被警用，无法定位您的位置";
+			handler.post(runnableUi);
+        } else {
+	        Location location = locationManager.getLastKnownLocation(bestProvider); // 通过GPS获取位置  
+	        updateToNewLocation(location);  
+	        // 设置监听器，自动更新的最小时间为间隔N秒(1秒为1*1000，这样写主要为了方便)或最小位移变化超过N米  
+	        locationManager.requestLocationUpdates(bestProvider, 100 * 1000, 500, this);
+        }
 		
 		
 		TelephonyManager telephonyManager = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
@@ -162,7 +166,7 @@ public class RegisterAccountFragmentActivity extends FragmentActivity implements
                 }
             }.start();
         } else {
-            tv1.setText("无法获取位置信息");
+            tv1.setText("无法定位您的位置");
         }  
   
     }

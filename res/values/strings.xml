@@ -13,14 +13,22 @@
     <string name="affairs">动态</string>
     <string name="more">更多</string>
     <string name="card">名片</string>
-    <string name="register">注册</string>
+    <string name="register">新用户</string>
+    <string name="cannotLogin">无法登录</string>
     <string name="login">登录</string>
+    
+    <string name="wallet">钱包</string>
+    <string name="album">相册</string>
+    <string name="accountMgr">帐号管理</string>
     
     <string name="sof">社交圈</string>
     <string name="contacts">通讯录</string>
     <string name="group">群组</string>
     
     <string name="fg">好友分组</string>
+    
+    <string name="account">帐号</string>
+    <string name="logout">退出当前帐号</string>
     
     <string name="btLogin">登录</string>
     <string name="username_hint_text">帐号/手机号码/邮箱</string>
