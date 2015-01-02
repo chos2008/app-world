@@ -2,7 +2,11 @@
 <resources>
 
     <string name="app_name">World</string>
+    <string name="picasso_app_name">RoundedPicassoView</string>
     <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="background">背景</string>
     
     <string name="message">消息</string>
     <string name="contact">联系人</string>
@@ -33,6 +37,8 @@
     <string name="touchControl">触控屏</string>
     <string name="scan">扫一扫</string>
     <string name="scanCard">扫描银行卡</string>
+    <string name="example1">例子1</string>
+    <string name="example2">例子2</string>
     <string name="setting">设置</string>
     <string name="update">版本更新</string>
     <string name="about">关于...</string>
@@ -43,4 +49,13 @@
     <string name="icon">图标</string>
     <string name="bond">配对</string>
     <string name="connect">连接</string>
+    
+    <string-array name="action_list">
+	    <item>Bitmap</item>
+	    <item>Ovals</item>
+	    <item>Color</item>
+	    <!-- 
+	    <item>Picasso</item>
+	     -->
+	</string-array>
 </resources>

@@ -19,7 +19,9 @@ import java.util.Map;
 
 import org.chos.world.ContactModel;
 
+import com.alan.roundimageview.Example2Activity;
 import com.example.world.MainFragmentActivity.MyOnClickListener;
+import com.makeramen.example.ExampleActivity;
 
 import android.content.ContentResolver;
 import android.content.ContentUris;
@@ -98,18 +100,14 @@ public class MoreFragment extends Fragment {
         TextView scan = (TextView) view.findViewById(R.id.scan);
         scan.setOnClickListener(new ScanOnClickListener(view));
         
+        TextView examples = (TextView) view.findViewById(R.id.example1);
+        examples.setOnClickListener(new ExamplesOnClickListener(view));
+        
+        TextView example2 = (TextView) view.findViewById(R.id.example2);
+        example2.setOnClickListener(new Example2OnClickListener(view));
+        
         TextView scanCard = (TextView) view.findViewById(R.id.scanCard);
         scanCard.setOnClickListener(new ScanCardOnClickListener(view));
-        
-        TextView setting = (TextView) view.findViewById(R.id.setting);
-        setting.setOnClickListener(new SettingOnClickListener(view));
-        
-        TextView update = (TextView) view.findViewById(R.id.update);
-        update.setOnClickListener(new UpdateOnClickListener(view));
-        
-        TextView about = (TextView) view.findViewById(R.id.about);
-        about.setOnClickListener(new AboutOnClickListener(view));
-        
         return view;
     }  
 
@@ -244,12 +242,12 @@ public class MoreFragment extends Fragment {
         	onScanPress(view);
         }  
     }
-
-    public class SettingOnClickListener implements View.OnClickListener {  
+    
+    public class ExamplesOnClickListener implements View.OnClickListener {  
         
     	private View view;
     	
-        public SettingOnClickListener(View view) {
+        public ExamplesOnClickListener(View view) {
         	this.view = view;
         }
         
@@ -257,16 +255,16 @@ public class MoreFragment extends Fragment {
         public void onClick(View v) {
         	System.out.println("on click " + v.getId());
         	Context context = view.getContext();
-			Intent intent = new Intent(context, CaptureFragmentActivity.class);
+			Intent intent = new Intent(context, ExampleActivity.class);
         	context.startActivity(intent);
         }  
     };
     
-    public class UpdateOnClickListener implements View.OnClickListener {  
+    public class Example2OnClickListener implements View.OnClickListener {  
         
     	private View view;
     	
-        public UpdateOnClickListener(View view) {
+        public Example2OnClickListener(View view) {
         	this.view = view;
         }
         
@@ -274,24 +272,7 @@ public class MoreFragment extends Fragment {
         public void onClick(View v) {
         	System.out.println("on click " + v.getId());
         	Context context = view.getContext();
-			Intent intent = new Intent(context, CaptureFragmentActivity.class);
-        	context.startActivity(intent);
-        }  
-    };
-    
-    public class AboutOnClickListener implements View.OnClickListener {  
-        
-    	private View view;
-    	
-        public AboutOnClickListener(View view) {
-        	this.view = view;
-        }
-        
-        @Override  
-        public void onClick(View v) {
-        	System.out.println("on click " + v.getId());
-        	Context context = view.getContext();
-			Intent intent = new Intent(context, CaptureFragmentActivity.class);
+			Intent intent = new Intent(context, Example2Activity.class);
         	context.startActivity(intent);
         }  
     };

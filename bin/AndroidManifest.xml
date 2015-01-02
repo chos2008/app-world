@@ -71,11 +71,16 @@
         </activity>
         <!-- 
 		 -->
+		<activity android:name="com.example.world.StartFragmentActivity"/>
 		<activity android:name="com.example.world.MainActivity"/>
 		<activity android:name="com.example.world.BluetoothFragmentActivity"/>
 		<activity android:name="com.example.world.CaptureFragmentActivity"/>
 		<activity android:name="com.example.world.account.LoginFragmentActivity"/>
 		<activity android:name="com.example.world.account.RegisterAccountFragmentActivity"/>
+		<activity android:name="com.makeramen.example.ExampleActivity"/>
+		<activity android:name="com.alan.roundimageview.Example2Activity"/>
+		<activity android:name="com.example.world.ViewFragmentActivity"/>
+		<activity android:name="com.example.world.SettingFragmentActivity"/>
 		
 		<activity android:name="io.card.payment.CardIOActivity" android:configChanges="keyboardHidden|orientation" />
     	<activity android:name="io.card.payment.DataEntryActivity" android:screenOrientation="portrait"/>

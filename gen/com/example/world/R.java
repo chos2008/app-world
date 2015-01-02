@@ -16,6 +16,13 @@ public final class R {
         public static final int abc_slide_out_bottom=0x7f040004;
         public static final int abc_slide_out_top=0x7f040005;
     }
+    public static final class array {
+        /**  
+	    <item>Picasso</item>
+	     
+         */
+        public static final int action_list=0x7f0c0000;
+    }
     public static final class attr {
         /**  Custom divider drawable to use for elements in the action bar. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -223,6 +230,53 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 "<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
          */
         public static final int backgroundStacked=0x7f01002c;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int border_color=0x7f01006c;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int border_inside_color=0x7f010070;
+        /** <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int border_outside_color=0x7f010071;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int border_thickness=0x7f01006f;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int border_width=0x7f01006b;
         /**  A style that may be applied to Buttons placed within a
          LinearLayout with the style buttonBarStyle to form a button bar. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
@@ -235,6 +289,16 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int buttonBarStyle=0x7f010013;
+        /** <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int corner_radius=0x7f01006a;
         /**  Specifies a layout for custom navigation. Overrides navigationMode. 
          <p>Must be a reference to another resource, in the form "<code>@[+][<i>package</i>:]<i>type</i>:<i>name</i></code>"
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
@@ -457,6 +521,14 @@ containing a value of this type.
 or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>".
          */
         public static final int logo=0x7f010029;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int mutate_background=0x7f01006d;
         /**  The type of navigation to use. 
          <p>Must be one of the following constant values.</p>
 <table>
@@ -470,6 +542,14 @@ or to a theme attribute in the form "<code>?[<i>package</i>:][<i>type</i>:]<i>na
 </table>
          */
         public static final int navigationMode=0x7f010023;
+        /** <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+         */
+        public static final int oval=0x7f01006e;
         /**  Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}. 
          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
 Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
@@ -831,6 +911,7 @@ containing a value of this type.
         /** 暗红色 
          */
         public static final int blueviolet=0x7f07005e;
+        public static final int border=0x7f070096;
         /** 暗灰色 
          */
         public static final int brown=0x7f070053;
@@ -1417,23 +1498,37 @@ containing a value of this type.
         public static final int abc_textfield_searchview_holo_light=0x7f020054;
         public static final int abc_textfield_searchview_right_holo_dark=0x7f020055;
         public static final int abc_textfield_searchview_right_holo_light=0x7f020056;
-        public static final int bg_edittext=0x7f020057;
-        public static final int bg_edittext_focused=0x7f020058;
-        public static final int bg_edittext_normal=0x7f020059;
-        public static final int bond=0x7f02005a;
-        public static final int bonded=0x7f02005b;
-        public static final int bonding=0x7f02005c;
-        public static final int card_qr_code=0x7f02005d;
-        public static final int connect=0x7f02005e;
-        public static final int contact=0x7f02005f;
-        public static final int ic_launcher=0x7f020060;
-        public static final int logo=0x7f020061;
-        public static final int logo_t=0x7f020062;
-        public static final int opinion_icon=0x7f020063;
-        public static final int selector=0x7f020064;
-        public static final int style_button_normal=0x7f020065;
-        public static final int style_edittext_normal=0x7f020066;
-        public static final int wechat_icon=0x7f020067;
+        public static final int background=0x7f020057;
+        public static final int bg=0x7f020058;
+        public static final int bg_edittext=0x7f020059;
+        public static final int bg_edittext_focused=0x7f02005a;
+        public static final int bg_edittext_normal=0x7f02005b;
+        public static final int bond=0x7f02005c;
+        public static final int bonded=0x7f02005d;
+        public static final int bonding=0x7f02005e;
+        public static final int card_qr_code=0x7f02005f;
+        public static final int connect=0x7f020060;
+        public static final int contact=0x7f020061;
+        public static final int default_portrait=0x7f020062;
+        public static final int dzt=0x7f020063;
+        public static final int fnj=0x7f020064;
+        public static final int girl=0x7f020065;
+        public static final int ic_launcher=0x7f020066;
+        public static final int iid=0x7f020067;
+        public static final int logo=0x7f020068;
+        public static final int logo_t=0x7f020069;
+        public static final int opinion_icon=0x7f02006a;
+        public static final int photo1=0x7f02006b;
+        public static final int photo2=0x7f02006c;
+        public static final int photo3=0x7f02006d;
+        public static final int photo4=0x7f02006e;
+        public static final int photo5=0x7f02006f;
+        public static final int photo6=0x7f020070;
+        public static final int photo7=0x7f020071;
+        public static final int selector=0x7f020072;
+        public static final int style_button_normal=0x7f020073;
+        public static final int style_edittext_normal=0x7f020074;
+        public static final int wechat_icon=0x7f020075;
     }
     public static final class id {
         public static final int ItemBond=0x7f05003f;
@@ -1441,7 +1536,7 @@ containing a value of this type.
         public static final int ItemImage=0x7f05003c;
         public static final int ItemText=0x7f05003e;
         public static final int ItemTitle=0x7f05003d;
-        public static final int about=0x7f050062;
+        public static final int about=0x7f050071;
         public static final int action_bar=0x7f05001c;
         public static final int action_bar_activity_content=0x7f050015;
         public static final int action_bar_container=0x7f05001b;
@@ -1453,19 +1548,20 @@ containing a value of this type.
         public static final int action_menu_divider=0x7f050016;
         public static final int action_menu_presenter=0x7f050017;
         public static final int action_mode_close_button=0x7f050024;
-        public static final int action_settings=0x7f050068;
+        public static final int action_settings=0x7f050074;
         public static final int activity_chooser_view_content=0x7f050025;
         public static final int always=0x7f05000b;
+        public static final int background=0x7f050072;
         public static final int beginning=0x7f050011;
         public static final int bluetooth=0x7f050047;
-        public static final int btLogin=0x7f050054;
-        public static final int btRegister=0x7f050066;
+        public static final int btLogin=0x7f050058;
+        public static final int btRegister=0x7f05006e;
         public static final int canvas=0x7f050048;
         public static final int card=0x7f050049;
         public static final int checkbox=0x7f05002d;
         public static final int collapseActionView=0x7f05000d;
         public static final int contact=0x7f05004e;
-        public static final int container=0x7f050055;
+        public static final int container=0x7f050059;
         public static final int content=0x7f050046;
         public static final int default_activity_button=0x7f050028;
         public static final int dialog=0x7f05000e;
@@ -1475,6 +1571,8 @@ containing a value of this type.
         public static final int edit_query=0x7f050030;
         public static final int enableBluetooth=0x7f050043;
         public static final int end=0x7f050013;
+        public static final int example1=0x7f050065;
+        public static final int example2=0x7f050066;
         public static final int expand_activities_button=0x7f050026;
         public static final int expanded_menu=0x7f05002c;
         public static final int head=0x7f05004a;
@@ -1483,34 +1581,40 @@ containing a value of this type.
         public static final int icon=0x7f05002a;
         public static final int ifRoom=0x7f05000a;
         public static final int image=0x7f050027;
-        public static final int joystick=0x7f05005b;
+        public static final int imageView1=0x7f050067;
+        public static final int joystick=0x7f050060;
         public static final int listMode=0x7f050001;
         public static final int list_item=0x7f050029;
-        public static final int location=0x7f050063;
+        public static final int location=0x7f05006b;
         public static final int mAffairs=0x7f050050;
-        public static final int mCard=0x7f050058;
+        public static final int mCard=0x7f05005d;
         public static final int mContact=0x7f05004f;
         public static final int mContacts=0x7f05004c;
         public static final int mGroup=0x7f05004d;
-        public static final int mLogin=0x7f05005a;
+        public static final int mLogin=0x7f05005f;
         public static final int mMessage=0x7f050051;
-        public static final int mMore=0x7f050057;
-        public static final int mRegister=0x7f050059;
+        public static final int mMore=0x7f05005c;
+        public static final int mRegister=0x7f05005e;
         public static final int mSof=0x7f05004b;
+        public static final int main_list=0x7f050055;
         public static final int middle=0x7f050012;
-        public static final int mobile=0x7f050065;
+        public static final int mobile=0x7f05006d;
+        public static final int mv=0x7f05005a;
         public static final int never=0x7f050009;
         public static final int none=0x7f050010;
         public static final int normal=0x7f050000;
         public static final int panel=0x7f050041;
-        public static final int password=0x7f050053;
+        public static final int password=0x7f050057;
         public static final int progress_circular=0x7f050018;
         public static final int progress_horizontal=0x7f050019;
-        public static final int provider=0x7f050064;
+        public static final int provider=0x7f05006c;
         public static final int radio=0x7f05002f;
-        public static final int remoteControl=0x7f05005c;
-        public static final int scan=0x7f05005e;
-        public static final int scanCard=0x7f05005f;
+        public static final int remoteControl=0x7f050061;
+        public static final int roundImage_network=0x7f050052;
+        public static final int roundImage_one_border=0x7f050053;
+        public static final int roundImage_two_border=0x7f050054;
+        public static final int scan=0x7f050063;
+        public static final int scanCard=0x7f050064;
         public static final int searchBluetooth=0x7f050045;
         public static final int search_badge=0x7f050032;
         public static final int search_bar=0x7f050031;
@@ -1522,7 +1626,7 @@ containing a value of this type.
         public static final int search_plate=0x7f050036;
         public static final int search_src_text=0x7f050037;
         public static final int search_voice_btn=0x7f05003b;
-        public static final int setting=0x7f050060;
+        public static final int setting=0x7f050073;
         public static final int shortcut=0x7f05002e;
         public static final int showCustom=0x7f050007;
         public static final int showHome=0x7f050004;
@@ -1530,16 +1634,19 @@ containing a value of this type.
         public static final int split_action_bar=0x7f05001e;
         public static final int submit_area=0x7f050039;
         public static final int tabMode=0x7f050002;
-        public static final int terms=0x7f050067;
+        public static final int terms=0x7f05006f;
+        public static final int textView1=0x7f05006a;
+        public static final int textView2=0x7f050069;
+        public static final int textView3=0x7f050068;
         public static final int title=0x7f05002b;
         public static final int titlePanel=0x7f050042;
         public static final int top_action_bar=0x7f050020;
-        public static final int touchControl=0x7f05005d;
+        public static final int touchControl=0x7f050062;
         public static final int up=0x7f050021;
-        public static final int update=0x7f050061;
+        public static final int update=0x7f050070;
         public static final int useLogo=0x7f050003;
-        public static final int username=0x7f050052;
-        public static final int viewPager=0x7f050056;
+        public static final int username=0x7f050056;
+        public static final int viewPager=0x7f05005b;
         public static final int withText=0x7f05000c;
     }
     public static final class integer {
@@ -1598,16 +1705,24 @@ containing a value of this type.
         public static final int contact=0x7f03001b;
         public static final int contact_fragment=0x7f03001c;
         public static final int contact_fragment_activity=0x7f03001d;
-        public static final int login_fragment_activity=0x7f03001e;
-        public static final int main_activity=0x7f03001f;
-        public static final int main_fragment_activity=0x7f030020;
-        public static final int main_fragment_activity_content=0x7f030021;
-        public static final int more_fragment=0x7f030022;
-        public static final int register_fragment_activity=0x7f030023;
-        public static final int support_simple_spinner_dropdown_item=0x7f030024;
+        public static final int example_2_activity=0x7f03001e;
+        public static final int fragment_rounded=0x7f03001f;
+        public static final int login_fragment_activity=0x7f030020;
+        public static final int main_activity=0x7f030021;
+        public static final int main_fragment_activity=0x7f030022;
+        public static final int main_fragment_activity_content=0x7f030023;
+        public static final int more_fragment=0x7f030024;
+        public static final int picasso_item=0x7f030025;
+        public static final int register_fragment_activity=0x7f030026;
+        public static final int rounded_item=0x7f030027;
+        public static final int setting_fragment_activity=0x7f030028;
+        public static final int start2_fragment_activity=0x7f030029;
+        public static final int start_fragment_activity=0x7f03002a;
+        public static final int support_simple_spinner_dropdown_item=0x7f03002b;
+        public static final int view_fragment_activity=0x7f03002c;
     }
     public static final class menu {
-        public static final int main=0x7f0c0000;
+        public static final int main=0x7f0d0000;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1650,40 +1765,55 @@ containing a value of this type.
         /**  Description of a share target (both in the list of such or the default share button) in a ShareActionProvider (share UI). [CHAR LIMIT=NONE] 
          */
         public static final int abc_shareactionprovider_share_with_application=0x7f0a000b;
-        public static final int about=0x7f0a0028;
-        public static final int action_settings=0x7f0a000e;
-        public static final int affairs=0x7f0a0011;
-        public static final int app_name=0x7f0a000d;
-        public static final int bluetooth=0x7f0a0020;
-        public static final int bond=0x7f0a002d;
-        public static final int btLogin=0x7f0a001a;
-        public static final int btRegister=0x7f0a001d;
-        public static final int card=0x7f0a0013;
-        public static final int connect=0x7f0a002e;
-        public static final int contact=0x7f0a0010;
-        public static final int contacts=0x7f0a0017;
-        public static final int disableBluetooth=0x7f0a002a;
-        public static final int enableBluetooth=0x7f0a0029;
-        public static final int fg=0x7f0a0019;
-        public static final int group=0x7f0a0018;
-        public static final int icon=0x7f0a002c;
-        public static final int joystick=0x7f0a0021;
-        public static final int login=0x7f0a0015;
-        public static final int message=0x7f0a000f;
-        public static final int more=0x7f0a0012;
-        public static final int password_hint_text=0x7f0a001c;
-        public static final int register=0x7f0a0014;
-        public static final int register_mobile_hint_text=0x7f0a001e;
-        public static final int remoteControl=0x7f0a0022;
-        public static final int scan=0x7f0a0024;
-        public static final int scanCard=0x7f0a0025;
-        public static final int searchBluetooth=0x7f0a002b;
-        public static final int setting=0x7f0a0026;
-        public static final int sof=0x7f0a0016;
-        public static final int terms=0x7f0a001f;
-        public static final int touchControl=0x7f0a0023;
-        public static final int update=0x7f0a0027;
-        public static final int username_hint_text=0x7f0a001b;
+        public static final int about=0x7f0a0037;
+        public static final int action_settings=0x7f0a0019;
+        public static final int affairs=0x7f0a001e;
+        public static final int app_name=0x7f0a0017;
+        public static final int background=0x7f0a001b;
+        public static final int bluetooth=0x7f0a002d;
+        public static final int bond=0x7f0a003c;
+        public static final int btLogin=0x7f0a0027;
+        public static final int btRegister=0x7f0a002a;
+        public static final int card=0x7f0a0020;
+        public static final int connect=0x7f0a003d;
+        public static final int contact=0x7f0a001d;
+        public static final int contacts=0x7f0a0024;
+        public static final int define_roundedimageview=0x7f0a000d;
+        public static final int disableBluetooth=0x7f0a0039;
+        public static final int enableBluetooth=0x7f0a0038;
+        public static final int example1=0x7f0a0033;
+        public static final int example2=0x7f0a0034;
+        public static final int fg=0x7f0a0026;
+        public static final int group=0x7f0a0025;
+        public static final int hello_world=0x7f0a001a;
+        public static final int icon=0x7f0a003b;
+        public static final int joystick=0x7f0a002e;
+        public static final int library_roundedimageview_author=0x7f0a000e;
+        public static final int library_roundedimageview_authorWebsite=0x7f0a000f;
+        public static final int library_roundedimageview_isOpenSource=0x7f0a0015;
+        public static final int library_roundedimageview_libraryDescription=0x7f0a0011;
+        public static final int library_roundedimageview_libraryName=0x7f0a0010;
+        public static final int library_roundedimageview_libraryVersion=0x7f0a0012;
+        public static final int library_roundedimageview_libraryWebsite=0x7f0a0013;
+        public static final int library_roundedimageview_licenseId=0x7f0a0014;
+        public static final int library_roundedimageview_repositoryLink=0x7f0a0016;
+        public static final int login=0x7f0a0022;
+        public static final int message=0x7f0a001c;
+        public static final int more=0x7f0a001f;
+        public static final int password_hint_text=0x7f0a0029;
+        public static final int picasso_app_name=0x7f0a0018;
+        public static final int register=0x7f0a0021;
+        public static final int register_mobile_hint_text=0x7f0a002b;
+        public static final int remoteControl=0x7f0a002f;
+        public static final int scan=0x7f0a0031;
+        public static final int scanCard=0x7f0a0032;
+        public static final int searchBluetooth=0x7f0a003a;
+        public static final int setting=0x7f0a0035;
+        public static final int sof=0x7f0a0023;
+        public static final int terms=0x7f0a002c;
+        public static final int touchControl=0x7f0a0030;
+        public static final int update=0x7f0a0036;
+        public static final int username_hint_text=0x7f0a0028;
     }
     public static final class style {
         /** 
@@ -3015,6 +3145,111 @@ containing a value of this type.
           @attr name android:windowAnimationStyle
         */
         public static final int MenuView_android_windowAnimationStyle = 0;
+        /** Attributes that can be used with a RoundedImageView.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #RoundedImageView_android_scaleType android:scaleType}</code></td><td></td></tr>
+           <tr><td><code>{@link #RoundedImageView_border_color com.example.world:border_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #RoundedImageView_border_width com.example.world:border_width}</code></td><td></td></tr>
+           <tr><td><code>{@link #RoundedImageView_corner_radius com.example.world:corner_radius}</code></td><td></td></tr>
+           <tr><td><code>{@link #RoundedImageView_mutate_background com.example.world:mutate_background}</code></td><td></td></tr>
+           <tr><td><code>{@link #RoundedImageView_oval com.example.world:oval}</code></td><td></td></tr>
+           </table>
+           @see #RoundedImageView_android_scaleType
+           @see #RoundedImageView_border_color
+           @see #RoundedImageView_border_width
+           @see #RoundedImageView_corner_radius
+           @see #RoundedImageView_mutate_background
+           @see #RoundedImageView_oval
+         */
+        public static final int[] RoundedImageView = {
+            0x0101011d, 0x7f01006a, 0x7f01006b, 0x7f01006c,
+            0x7f01006d, 0x7f01006e
+        };
+        /**
+          <p>This symbol is the offset where the {@link android.R.attr#scaleType}
+          attribute's value can be found in the {@link #RoundedImageView} array.
+          @attr name android:scaleType
+        */
+        public static final int RoundedImageView_android_scaleType = 0;
+        /**
+          <p>This symbol is the offset where the {@link com.example.world.R.attr#border_color}
+          attribute's value can be found in the {@link #RoundedImageView} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.world:border_color
+        */
+        public static final int RoundedImageView_border_color = 3;
+        /**
+          <p>This symbol is the offset where the {@link com.example.world.R.attr#border_width}
+          attribute's value can be found in the {@link #RoundedImageView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.world:border_width
+        */
+        public static final int RoundedImageView_border_width = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.example.world.R.attr#corner_radius}
+          attribute's value can be found in the {@link #RoundedImageView} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.world:corner_radius
+        */
+        public static final int RoundedImageView_corner_radius = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.example.world.R.attr#mutate_background}
+          attribute's value can be found in the {@link #RoundedImageView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.world:mutate_background
+        */
+        public static final int RoundedImageView_mutate_background = 4;
+        /**
+          <p>This symbol is the offset where the {@link com.example.world.R.attr#oval}
+          attribute's value can be found in the {@link #RoundedImageView} array.
+
+
+          <p>Must be a boolean value, either "<code>true</code>" or "<code>false</code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.world:oval
+        */
+        public static final int RoundedImageView_oval = 5;
         /** Attributes that can be used with a SearchView.
            <p>Includes the following attributes:</p>
            <table>
@@ -3428,5 +3663,68 @@ containing a value of this type.
           @attr name com.example.world:paddingStart
         */
         public static final int View_paddingStart = 1;
+        /** Attributes that can be used with a roundedimageview.
+           <p>Includes the following attributes:</p>
+           <table>
+           <colgroup align="left" />
+           <colgroup align="left" />
+           <tr><th>Attribute</th><th>Description</th></tr>
+           <tr><td><code>{@link #roundedimageview_border_inside_color com.example.world:border_inside_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #roundedimageview_border_outside_color com.example.world:border_outside_color}</code></td><td></td></tr>
+           <tr><td><code>{@link #roundedimageview_border_thickness com.example.world:border_thickness}</code></td><td></td></tr>
+           </table>
+           @see #roundedimageview_border_inside_color
+           @see #roundedimageview_border_outside_color
+           @see #roundedimageview_border_thickness
+         */
+        public static final int[] roundedimageview = {
+            0x7f01006f, 0x7f010070, 0x7f010071
+        };
+        /**
+          <p>This symbol is the offset where the {@link com.example.world.R.attr#border_inside_color}
+          attribute's value can be found in the {@link #roundedimageview} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.world:border_inside_color
+        */
+        public static final int roundedimageview_border_inside_color = 1;
+        /**
+          <p>This symbol is the offset where the {@link com.example.world.R.attr#border_outside_color}
+          attribute's value can be found in the {@link #roundedimageview} array.
+
+
+          <p>Must be a color value, in the form of "<code>#<i>rgb</i></code>", "<code>#<i>argb</i></code>",
+"<code>#<i>rrggbb</i></code>", or "<code>#<i>aarrggbb</i></code>".
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.world:border_outside_color
+        */
+        public static final int roundedimageview_border_outside_color = 2;
+        /**
+          <p>This symbol is the offset where the {@link com.example.world.R.attr#border_thickness}
+          attribute's value can be found in the {@link #roundedimageview} array.
+
+
+          <p>Must be a dimension value, which is a floating point number appended with a unit such as "<code>14.5sp</code>".
+Available units are: px (pixels), dp (density-independent pixels), sp (scaled pixels based on preferred font size),
+in (inches), mm (millimeters).
+<p>This may also be a reference to a resource (in the form
+"<code>@[<i>package</i>:]<i>type</i>:<i>name</i></code>") or
+theme attribute (in the form
+"<code>?[<i>package</i>:][<i>type</i>:]<i>name</i></code>")
+containing a value of this type.
+          @attr name com.example.world:border_thickness
+        */
+        public static final int roundedimageview_border_thickness = 0;
     };
 }

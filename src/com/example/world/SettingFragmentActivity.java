@@ -8,10 +8,14 @@
  */
 package com.example.world;
 
+import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.TextView;
 
 /**
  * 
@@ -33,8 +37,47 @@ public class SettingFragmentActivity extends FragmentActivity {
 		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, 
 				WindowManager.LayoutParams.FLAG_FULLSCREEN); //»•µÙ–≈œ¢¿∏
 		
-		setContentView(R.layout.capture_fragment_activity);
+		setContentView(R.layout.setting_fragment_activity);
+		
+		TextView update = (TextView) findViewById(R.id.update);
+        update.setOnClickListener(new UpdateOnClickListener(this));
+        
+        TextView about = (TextView) findViewById(R.id.about);
+        about.setOnClickListener(new AboutOnClickListener(this));
 	}
+	
+
+    public class UpdateOnClickListener implements View.OnClickListener {  
+        
+    	private Context context;
+    	
+        public UpdateOnClickListener(Context context) {
+        	this.context = context;
+        }
+        
+        @Override  
+        public void onClick(View v) {
+        	System.out.println("on click " + v.getId());
+			Intent intent = new Intent(context, CaptureFragmentActivity.class);
+        	context.startActivity(intent);
+        }  
+    };
+    
+    public class AboutOnClickListener implements View.OnClickListener {  
+        
+    	private Context context;
+    	
+        public AboutOnClickListener(Context context) {
+        	this.context = context;
+        }
+        
+        @Override  
+        public void onClick(View v) {
+        	System.out.println("on click " + v.getId());
+			Intent intent = new Intent(context, CaptureFragmentActivity.class);
+        	context.startActivity(intent);
+        }  
+    };
 
 	/* (non-Javadoc)
 	 * @see android.support.v4.app.Fragment#onDestroy()

@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+import com.alan.roundimageview.RoundImageView;
 import com.example.world.account.CardFragment;
 import com.example.world.account.LoginFragmentActivity;
 import com.example.world.account.RegisterAccountFragmentActivity;
@@ -64,6 +65,9 @@ public class MainFragmentActivity extends FragmentActivity {
 		setContentView(R.layout.main_fragment_activity);
 		
 		resources = getResources();
+		
+		RoundImageView head = (RoundImageView) findViewById(R.id.mv);
+		head.setOnClickListener(new ViewOnClickListener(this));
 		
 		DisplayMetrics dm = new DisplayMetrics();  
         getWindowManager().getDefaultDisplay().getMetrics(dm);  
@@ -137,7 +141,12 @@ public class MainFragmentActivity extends FragmentActivity {
         
         mPager.setAdapter(new WorldFragmentPagerAdapter(getSupportFragmentManager(), fragmentsList));  
         mPager.setCurrentItem(0);  
-        mPager.setOnPageChangeListener(new MyOnPageChangeListener(tvTabList)); 
+        mPager.setOnPageChangeListener(new MyOnPageChangeListener(tvTabList));
+        
+        
+        Intent intent = new Intent(this, StartFragmentActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_WHEN_TASK_RESET);
+        startActivity(intent);
 	}
 
 	public class MyOnClickListener implements View.OnClickListener {  
@@ -223,3 +232,19 @@ public class MainFragmentActivity extends FragmentActivity {
         }  
     } 
 }
+
+class ViewOnClickListener implements View.OnClickListener {  
+    
+	private Context context;
+	
+    public ViewOnClickListener(Context context) {
+    	this.context = context;
+    }
+    
+    @Override  
+    public void onClick(View v) {
+    	System.out.println("on click " + v.getId());
+		Intent intent = new Intent(context, ViewFragmentActivity.class);
+    	context.startActivity(intent);
+    }  
+};
