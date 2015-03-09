@@ -82,8 +82,11 @@ public class MoreFragment extends Fragment {
   
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
-        Log.d(TAG, "TestFragment-----onCreateView");
+        Log.d(TAG, "MoreFragment-----onCreateView");
         View view = inflater.inflate(resource, container, false);
+        
+        TextView yihaodian = (TextView) view.findViewById(R.id.yihaodian);
+        yihaodian.setOnClickListener(new TheStoreOnClickListener(view));
         
         TextView bluetooth = (TextView) view.findViewById(R.id.bluetooth);
         bluetooth.setOnClickListener(new JoystickOnClickListener(view));
@@ -114,10 +117,25 @@ public class MoreFragment extends Fragment {
     @Override
     public void onDestroy() {
         super.onDestroy();
-        Log.d(TAG, "TestFragment-----onDestroy");
+        Log.d(TAG, "MoreFragment-----onDestroy");
     }
     
-    
+    public class TheStoreOnClickListener implements View.OnClickListener {  
+        
+    	private View view;
+    	
+        public TheStoreOnClickListener(View view) {
+        	this.view = view;
+        }
+        
+        @Override  
+        public void onClick(View v) {
+        	System.out.println("on click " + v.getId());
+        	Context context = view.getContext();
+			Intent intent = new Intent(context, TheStore.class);
+        	context.startActivity(intent);
+        }  
+    };
     
     public class BluetoochOnClickListener implements View.OnClickListener {  
         

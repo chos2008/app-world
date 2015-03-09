@@ -39,6 +39,7 @@
     <string name="register_mobile_hint_text">请输入你的手机号码</string>
     <string name="terms">我已阅读并同意使用条款和隐私政策</string>
     
+    <string name="yihaodian">1号店</string>
     <string name="bluetooth">蓝牙</string>
     <string name="joystick">游戏手柄</string>
     <string name="remoteControl">遥控器</string>

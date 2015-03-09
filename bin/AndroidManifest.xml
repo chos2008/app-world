@@ -75,6 +75,7 @@
 		<activity android:name="com.example.world.account.AccountManagerActivity"/>
 		<activity android:name="com.example.world.account.CardFragmentActivity"/>
 		<activity android:name="com.example.world.MainActivity"/>
+		<activity android:name="com.example.world.TheStore"/>
 		<activity android:name="com.example.world.BluetoothFragmentActivity"/>
 		<activity android:name="com.example.world.CaptureFragmentActivity"/>
 		<activity android:name="com.example.world.account.LoginFragmentActivity"/>
@@ -82,6 +83,7 @@
 		<activity android:name="com.makeramen.example.ExampleActivity"/>
 		<activity android:name="com.alan.roundimageview.Example2Activity"/>
 		<activity android:name="com.example.world.ViewFragmentActivity"/>
+		<activity android:name="com.example.world.account.WebWallet"/>
 		<activity android:name="com.example.world.SettingFragmentActivity"/>
 		
 		<activity android:name="io.card.payment.CardIOActivity" android:configChanges="keyboardHidden|orientation" />
