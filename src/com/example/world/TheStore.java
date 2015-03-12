@@ -8,10 +8,14 @@
  */
 package com.example.world;
 
+import com.example.world.RefreshableWebView.PullToRefreshListener;
+
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
 import android.view.KeyEvent;
+import android.view.Window;
+import android.view.WindowManager;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -23,6 +27,8 @@ public class TheStore extends FragmentActivity {
 
 	private static final String TAG = TheStore.class.getName();
 	
+	private RefreshableWebView refreshableView;
+	
 	private WebView webView;
 	
 	
@@ -33,7 +39,25 @@ public class TheStore extends FragmentActivity {
 	@Override
 	protected void onCreate(Bundle arg0) {
 		super.onCreate(arg0);
+		requestWindowFeature(Window.FEATURE_NO_TITLE); //去掉标题栏
+
+		getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, 
+				WindowManager.LayoutParams.FLAG_FULLSCREEN); //去掉信息栏
+		
 		setContentView(R.layout.eb_higo_index);
+		
+		refreshableView = (RefreshableWebView) findViewById(R.id.refreshable_view);
+		refreshableView.setOnRefreshListener(new PullToRefreshListener() {
+			@Override
+			public void onRefresh() {
+				try {
+					Thread.sleep(3000);
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+				refreshableView.finishRefreshing();
+			}
+		}, 0);
 		
 		webView = (WebView) findViewById(R.id.webview);
 		webView.getSettings().setJavaScriptEnabled(true);

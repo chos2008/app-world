@@ -88,6 +88,12 @@ public class MoreFragment extends Fragment {
         TextView yihaodian = (TextView) view.findViewById(R.id.yihaodian);
         yihaodian.setOnClickListener(new TheStoreOnClickListener(view));
         
+        TextView tgou = (TextView) view.findViewById(R.id.tgou);
+        tgou.setOnClickListener(new TianGouOnClickListener(view));
+        
+        TextView pull_refresh = (TextView) view.findViewById(R.id.pull_refresh);
+        pull_refresh.setOnClickListener(new PullRefreshOnClickListener(view));
+        
         TextView bluetooth = (TextView) view.findViewById(R.id.bluetooth);
         bluetooth.setOnClickListener(new JoystickOnClickListener(view));
         
@@ -120,6 +126,24 @@ public class MoreFragment extends Fragment {
         Log.d(TAG, "MoreFragment-----onDestroy");
     }
     
+    
+    public class TianGouOnClickListener implements View.OnClickListener {  
+        
+    	private View view;
+    	
+        public TianGouOnClickListener(View view) {
+        	this.view = view;
+        }
+        
+        @Override  
+        public void onClick(View v) {
+        	System.out.println("on click " + v.getId());
+        	Context context = view.getContext();
+			Intent intent = new Intent(context, TianGou.class);
+        	context.startActivity(intent);
+        }  
+    };
+    
     public class TheStoreOnClickListener implements View.OnClickListener {  
         
     	private View view;
@@ -134,7 +158,24 @@ public class MoreFragment extends Fragment {
         	Context context = view.getContext();
 			Intent intent = new Intent(context, TheStore.class);
         	context.startActivity(intent);
-        }  
+        } 
+    };
+    
+    public class PullRefreshOnClickListener implements View.OnClickListener {  
+    	
+    	private View view;
+    	
+    	public PullRefreshOnClickListener(View view) {
+    		this.view = view;
+    	}
+    	
+    	@Override  
+    	public void onClick(View v) {
+    		System.out.println("on click " + v.getId());
+    		Context context = view.getContext();
+    		Intent intent = new Intent(context, RefreshableViewActivity.class);
+    		context.startActivity(intent);
+    	}  
     };
     
     public class BluetoochOnClickListener implements View.OnClickListener {  

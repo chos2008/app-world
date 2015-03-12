@@ -46,7 +46,8 @@
     
 	<uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
 
-    <application
+    <application 
+        android:hardwareAccelerated="true" 
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
@@ -75,7 +76,11 @@
 		<activity android:name="com.example.world.account.AccountManagerActivity"/>
 		<activity android:name="com.example.world.account.CardFragmentActivity"/>
 		<activity android:name="com.example.world.MainActivity"/>
-		<activity android:name="com.example.world.TheStore"/>
+		<activity android:name="com.example.world.TheStore" 
+		    android:hardwareAccelerated="false"/>
+		<activity android:name="com.example.world.TianGou" 
+		    android:hardwareAccelerated="false"/>
+		<activity android:name="com.example.world.RefreshableViewActivity"/>
 		<activity android:name="com.example.world.BluetoothFragmentActivity"/>
 		<activity android:name="com.example.world.CaptureFragmentActivity"/>
 		<activity android:name="com.example.world.account.LoginFragmentActivity"/>

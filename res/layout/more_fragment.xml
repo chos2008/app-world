@@ -53,7 +53,28 @@
 			            android:textSize="20sp" 
 			            android:gravity="center_vertical"
 			            android:text="@string/yihaodian" />
-			        
+			        <TextView
+			            android:id="@+id/tgou"
+			            android:layout_width="fill_parent"
+			            android:layout_height="32dp" 
+			            android:paddingLeft="15dp" 
+			            android:paddingRight="10dp" 
+			            android:drawableRight="@drawable/dzt" 
+			            android:drawableLeft="@drawable/m_logo_j_40x40"
+			            android:textSize="20sp" 
+			            android:gravity="center_vertical"
+			            android:text="@string/tgou" />
+			        <TextView
+			            android:id="@+id/pull_refresh"
+			            android:layout_width="fill_parent"
+			            android:layout_height="32dp" 
+			            android:paddingLeft="15dp" 
+			            android:paddingRight="10dp" 
+			            android:drawableRight="@drawable/dzt" 
+			            android:drawableLeft="@drawable/arrow"
+			            android:textSize="20sp" 
+			            android:gravity="center_vertical"
+			            android:text="@string/pull_refresh" />
 			        <TextView
 			            android:id="@+id/bluetooth"
 			            android:layout_width="fill_parent"

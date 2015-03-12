@@ -1,3 +1,7 @@
 eclipse.preferences.version=1
+encoding//assets/error.html=UTF-8
 encoding//src/com/alan/roundimageview/Example2Activity.java=UTF-8
 encoding//src/com/alan/roundimageview/RoundImageView.java=UTF-8
+encoding//src/com/example/world/RefreshableView.java=UTF-8
+encoding//src/com/example/world/RefreshableViewActivity.java=UTF-8
+encoding//src/com/example/world/RefreshableWebView.java=UTF-8
